@@ -1,0 +1,160 @@
+.main {
+    background-color: cornsilk;
+    height: 950px;
+}
+
+.header {
+    height: 120px;
+    padding: 15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(66deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 39%, rgba(242,232,8,1) 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerButton {
+    width: 565px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyInform {
+    height: 90px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.photoMy {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.photoName {
+    line-height: 11px;
+}
+
+.mcdonalds {
+    width: 50px;
+    height: 50px;
+    color: yellow;
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin-top: 13px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: yellow;
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(255, 94, 0);
+}
+
+.leftButton {
+    width: 200px;
+    height: 50px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.center {
+    background-image: url(https://wallpapercave.com/wp/wp1919492.jpg);
+    height: 630px;
+    padding: 10px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 41%, rgba(242,232,8,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footerLogo {
+    height: 185px;
+}
+
+.footerText {
+    font-size: 15px;
+    width: 340px;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+.sideBarLeft {
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sideBarRight {
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px 5px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarRightPhoto {
+    width: 220px;
+}
+
+.textRight {
+    margin: 20px;
+    font-size: 40px;
+    color: #A7DD3C;
+    text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+    text-align: center;
+}
+
+.text {
+    width: 500px;
+    height: 500px;
+    background: rgba(49,54,58,0.58);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bigMac {
+    width: 220px;
+    float: right;
+}
+
+.textdiv {
+    padding: 10px;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
