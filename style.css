@@ -1,161 +1,105 @@
-.main {
-    background-color: cornsilk;
-    height: 950px;
-}
-
-.header {
-    height: 120px;
-    padding: 15px;
-    background: rgb(0,0,0);
-    background: linear-gradient(66deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 39%, rgba(242,232,8,1) 100%);
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerButton {
-    width: 565px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.MyInform {
-    height: 90px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px #000000;
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.photoMy {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.photoName {
-    line-height: 11px;
-}
-
-.mcdonalds {
-    width: 50px;
-    height: 50px;
-    color: yellow;
-    box-shadow: 5px 5px 15px 5px #000000;
-    margin-top: 13px;
-}
-
-button {
-    width: 150px;
-    height: 50px;
-    background-color: yellow;
-    box-shadow: 5px 5px 15px 5px #000000;
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: rgb(255, 94, 0);
-}
-
-.leftButton {
-    width: 200px;
-    height: 50px;
-}
-
-a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.center {
-    background-image: url(https://wallpapercave.com/wp/wp1919492.jpg);
-    height: 630px;
-    padding: 10px;
+body {
+    background-image: url(https://st2.depositphotos.com/3462697/7187/i/600/depositphotos_71875659-stock-photo-black-and-white-chessboard-background.jpg);
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
 }
 
-.footer {
-    height: 200px;
-    background: rgb(0,0,0);
-    background: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 41%, rgba(242,232,8,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.footerLogo {
-    height: 185px;
-}
-
-.footerText {
-    font-size: 15px;
-    width: 340px;
-}
-
-ul {
-    padding-inline-start: 20px;
-}
-
-.sideBarLeft {
-    width: 200px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.sideBarRight {
-    width: 250px;
-    height: 300px;
-    margin-top: 30px;
-    padding: 15px;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 10%;
-    box-shadow: 5px 5px 15px 5px #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sideBarRightPhoto {
-    width: 220px;
-}
-
-.textRight {
-    margin: 20px;
-    font-size: 40px;
-    color: #A7DD3C;
-    text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+h1 {
     text-align: center;
+    margin: 0 0 70px 0;
+    font-size: 50px;
+    color: rgb(177, 18, 44);
+    text-shadow: -4px 4px rgba(179,179,179,.4),
+    -3px 3px rgba(153,153,153,.2), -2px 2px rgba(179,179,179,.2),
+    -1px 1px rgba(179,179,179,.2), 0px 0px rgba(128,128,128,.5),
+    1px -1px rgba(77,77,77,.6), 2px -2px rgba(77,77,77,.7),
+    3px -3px rgba(82,82,82,.8), 4px -4px rgba(77,77,77,.9),
+    5px -5px rgba(77,77,77,1), 18px -14px 5px rgba(206,48,103,0.52);
 }
 
-.text {
-    width: 500px;
-    height: 400px;
-    background: rgba(49,54,58,0.58);
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    overflow: auto;
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-spacing: 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B,
+    0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2,
+    0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.bigMac {
-    width: 220px;
-    float: right;
+tr th {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
 }
 
-.textdiv {
-    padding: 10px;
-    font-size: 32px;
-    color: #FFFFFF;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+.centr1 th:nth-child(odd), .centr2 th:nth-child(even),
+.centrB1 th:nth-child(odd), .centrB2 th:nth-child(even) {
+    background-color: white;
+}
+
+.centr1 th:nth-child(even), .centr2 th:nth-child(odd),
+.centrB1 th:nth-child(even), .centrB2 th:nth-child(odd) {
+    background-color: rgb(44, 43, 43);
+}
+
+tr:first-child, tr:last-child,
+.centr1 th:first-child, .centr1 th:last-child,
+.centr2 th:first-child, .centr2 th:last-child,
+.centrB1 th:first-child, .centrB1 th:last-child,
+.centrB2 th:first-child, .centrB2 th:last-child {
+    background-color: rgb(255, 0, 55);
+    background-image: none;
+}
+
+.centrB1 th, .centrB2 th{
+    background-image: url(./chess.png);
+    background-repeat: no-repeat;
+}
+
+.pawnBlack {
+    background-position: -265px -3px;
+}
+
+.RookB {
+    background-position: -106px -3px;
+}
+
+.KnightB {
+    background-position: -212px -3px;
+}
+
+.BishopB {
+    background-position: -159px -3px;
+}
+
+.QueenB {
+    background-position: -52px -3px;
+}
+
+.KingB {
+    background-position: 2px -1px;
+}
+
+.pawnWhite {
+    background-position: -265px -53px;
+}
+
+.RookW {
+    background-position: -106px -53px;
+}
+
+.KnightW {
+    background-position: -212px -53px;
+}
+
+.BishopW {
+    background-position: -159px -53px;
+}
+
+.QueenW {
+    background-position: -52px -53px;
+}
+
+.KingW {
+    background-position: 1px -52px;
 }
