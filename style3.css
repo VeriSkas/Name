@@ -1,0 +1,36 @@
+.superStar {
+    margin: 50px;
+    cursor: pointer;
+}
+
+.superStar:hover .star {
+    color: rgb(204, 24, 0);
+}
+
+.superStar .star {
+    display: inline-block;
+    margin: 1;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+		-0   -1px 1px #F90909,
+		 0   -1px 1px #F90909,
+		-0    1px 1px #F90909,
+		 0    1px 1px #F90909,
+		-1px -0   1px #F90909,
+		 1px -0   1px #F90909,
+		-1px  0   1px #F90909,
+		 1px  0   1px #F90909,
+		-1px -1px 1px #F90909,
+		 1px -1px 1px #F90909,
+		-1px  1px 1px #F90909,
+		 1px  1px 1px #F90909,
+		-1px -1px 1px #F90909,
+		 1px -1px 1px #F90909,
+		-1px  1px 1px #F90909,
+		 1px  1px 1px #F90909;
+}
+
+.superStar .star:hover ~ .star {
+    color: white;
+}
