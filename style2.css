@@ -1,39 +1,73 @@
-.superStar {
-    margin: 50px;
-    cursor: pointer;
+body {
+    background-image: url(https://st.depositphotos.com/1501954/1331/i/600/depositphotos_13316031-stock-photo-mcdonalds-logo-on-blue-sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.superStar:hover .star {
-    color: rgb(204, 24, 0);
-}
-.superStar .star {
-    display: inline-block;
-    margin: 1;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    text-shadow:
-		-0   -1px 1px #F90909,
-		 0   -1px 1px #F90909,
-		-0    1px 1px #F90909,
-		 0    1px 1px #F90909,
-		-1px -0   1px #F90909,
-		 1px -0   1px #F90909,
-		-1px  0   1px #F90909,
-		 1px  0   1px #F90909,
-		-1px -1px 1px #F90909,
-		 1px -1px 1px #F90909,
-		-1px  1px 1px #F90909,
-		 1px  1px 1px #F90909,
-		-1px -1px 1px #F90909,
-		 1px -1px 1px #F90909,
-		-1px  1px 1px #F90909,
-		 1px  1px 1px #F90909;
+.wrapper {
+    background-color: #5875a2b8;
+    width: 30%;
+    min-width: 350px;
+    border: 3px solid #000;
+    border-radius: 10%;
+    margin: 100px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.superStar .star:before {
-    content: '\2605';
+.cartRegistr {
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.superStar .star:hover ~ .star {
-    color: white;
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.buttons {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 350px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #efd21d;
+    margin-left: 10px;
+}
+
+.name {
+    width: 290px;
+}
+
+.email {
+    width: 280px;
+}
+
+.password1 {
+    width: 270px;
+}
+
+.password2 {
+    width: 198px;
+}
+
+.brthData {
+    width: 218px;
+    text-align: center;
+    color: grey;
+    text-transform: uppercase;
 }
