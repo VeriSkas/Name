@@ -27,28 +27,30 @@
                         </Button>
                     </div>
                 </div>
-                <div class="MyInform">
-                    <div class="buttons">
-                        <button class="mcdonalds">
-                            <img
-                                class="photoMy"
-                                src="http://pngimg.com/uploads/mcdonalds/small/mcdonalds_PNG19.png"
-                                alt="Photo"
-                            >
-                        </button>
-                        <button class="registration">
-                            <a href="./index2.html">Регистрация</a>
-                        </button>
+                <form action="#modalInput">
+                    <div class="MyInform">
+                        <div class="btns">
+                            <button class="mcdonalds" type="submit">
+                                <img
+                                    class="photoMy"
+                                    src="http://pngimg.com/uploads/mcdonalds/small/mcdonalds_PNG19.png"
+                                    alt="Photo"
+                                >
+                            </button>
+                            <button class="registration">
+                                <a href="#modal">Регистрация</a>
+                            </button>
+                        </div>
+                        <div class="photoName">
+                            <p>Имя:
+                                <input type="text" placeholder="Ваше имя" required>
+                            </p>
+                            <p>Пароль:
+                                <input type="password" placeholder="Ваш пароль" required>
+                            </p>
+                        </div>
                     </div>
-                    <div class="photoName">
-                        <p>Имя:___
-                            <input type="text" placeholder="Ваше имя">
-                        </p>
-                        <p>Пароль:
-                            <input type="password" placeholder="Ваш пароль">
-                        </p>
-                    </div>
-                </div>
+                </form>
             </div>
 
             <div class="center">
@@ -128,6 +130,64 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div class="wrapper">
+                <div class="cartRegistr">
+                    <form action="https://i.gifer.com/4A5.gif">
+                        <h1>Регистрация</h1>
+                        <div>
+                            <label for="name">Имя:</label>
+                            <input class="name" type="text" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input class="email" type="email" placeholder="Введите ваш email" required>
+                        </div>
+                        <div>
+                            <label for="password1">Пароль:</label>
+                            <input class="password1" type="password" placeholder="Введите ваш пароль" required>
+                        </div>
+                        <div>
+                            <label for="password2">Повторите пароль:</label>
+                            <input class="password2" type="password" placeholder="Введите ваш пароль еще раз" required>
+                        </div>
+                        <div>
+                            <label for="brthData">Дата рождения:</label>
+                            <input class="brthData" type="date" required>
+                        </div>
+                        <div>
+                            <label for="Women">Женщина</label>
+                            <input class="Women" type="radio" name="gender" required>
+                            <label for="Men">Мужчина</label>
+                            <input class="Men" type="radio" name="gender">
+                        </div>
+                        <div>
+                            <label for="child">Дети:</label>
+                            <select class="child" name="child">
+                                <option selected value="notChild">Не имею</option>
+                                <option value="One">Один ребенок</option>
+                                <option value="More">Два и более детей</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="consent">Согласны на обработку персональных данных: </label>
+                            <input class="consent" type="checkbox" required>
+                        </div>
+                        <div class="buttons">
+                            <button type="reset">Удалить</button>
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalInput">
+            <div class="welcome">
+                <p>Добро пожаловать!</p>
             </div>
         </div>
     </body>

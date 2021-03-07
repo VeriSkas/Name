@@ -3,6 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@ body {
     min-width: 350px;
     border: 3px solid #000;
     border-radius: 10%;
-    margin: 100px;
+    margin: 150px auto;
     padding: 20px;
     box-shadow: 5px 5px 15px 5px #000000;
 }
@@ -24,13 +25,16 @@ body {
 h1 {
     text-align: center;
     text-decoration: underline;
+    font-size: 50px;
+    text-shadow: 3px 5px 2px #474747;
 }
 
 form {
     line-height: 30px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    margin-bottom: 0;
 }
 
 .buttons {
@@ -70,4 +74,51 @@ button {
     text-align: center;
     color: grey;
     text-transform: uppercase;
+}
+
+form:invalid h1 {
+    color: red;
+}
+
+input:invalid {
+    background-color: rgb(248, 139, 139);
+}
+
+input:valid {
+    background-color: rgb(151, 250, 132);
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal:target {
+    display: block;
+    background-color: rgba(100, 100, 100, 0.9);
+}
+#modalInput {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modalInput:target {
+    display: block;
+    background-color: rgba(209, 13, 13, 0.9);
+}
+
+#modalInput p {
+    text-align: center;
+    font-size: 83px;
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 3px 5px 2px #474747;
 }
