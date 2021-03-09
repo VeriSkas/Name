@@ -122,3 +122,11 @@ input:valid {
     font-weight: bold;
     text-shadow: 3px 5px 2px #474747;
 }
+
+.modalArea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
