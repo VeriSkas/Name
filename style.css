@@ -1,37 +1,51 @@
 @import "./style2.css";
 
 .main {
-    background-color: cornsilk;
-    height: 950px;
+    display: grid;
+    grid-template-rows: 15% 65% 20%;
+}
+
+.header, .footer, .center,
+.sideBarLeft, .sideBarRight {
+    padding: 15px;
+    display: grid;
+    justify-items: center;
 }
 
 .header {
-    height: 120px;
-    padding: 15px;
-    background: rgb(0,0,0);
-    background: linear-gradient(66deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 39%, rgba(242,232,8,1) 100%);
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerButton {
-    width: 565px;
-    display: flex;
-    justify-content: space-between;
+    background: linear-gradient(66deg, rgba(0,0,0,1) 0%,
+    rgba(253,29,29,1) 39%, rgba(242,232,8,1) 100%);
+    grid-auto-rows: minmax(120px, auto);
+    grid-template-columns: 13% 55% 32%;
     align-items: center;
 }
 
+.logo1 {
+    width: 80%;
+}
+
+.headerButton {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+}
+
 .MyInform {
-    height: 90px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
     border: 2px solid black;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #000000;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.btns {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    align-items: center;
 }
 
 .photoMy {
@@ -40,22 +54,17 @@
     border-radius: 50%;
 }
 
-.photoName {
-    line-height: 11px;
-}
-
-.mcdonalds {
-    color: yellow;
-    box-shadow: 5px 5px 15px 5px #000000;
-    margin-top: 13px;
+.photoName input[type="password"] {
+    width: 155px;
 }
 
 button {
-    width: 150px;
+    width: 97%;
     height: 50px;
     background-color: yellow;
     box-shadow: 5px 5px 15px 5px #000000;
     font-size: 20px;
+    font-weight: bold;
 }
 
 button:hover {
@@ -83,59 +92,30 @@ a {
 
 .center {
     background-image: url(https://wallpapercave.com/wp/wp1919492.jpg);
-    height: 630px;
-    padding: 10px;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer {
-    height: 200px;
-    background: rgb(0,0,0);
-    background: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 41%, rgba(242,232,8,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.footerLogo {
-    height: 185px;
-}
-
-.footerText {
-    font-size: 15px;
-    width: 340px;
-}
-
-ul {
-    padding-inline-start: 20px;
+    background-position: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(630px, auto);
 }
 
 .sideBarLeft {
-    width: 200px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    grid-template-rows: repeat(4, 100px);
+    align-items: center;
 }
 
 .sideBarRight {
-    width: 250px;
     height: 300px;
     margin-top: 30px;
-    padding: 15px;
     background-color: yellow;
     border: 2px solid black;
     border-radius: 10%;
     box-shadow: 5px 5px 15px 5px #000000;
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: 70% 30%;
     align-items: center;
 }
 
 .sideBarRightPhoto {
-    width: 220px;
+    width: 100%;
 }
 
 .textRight {
@@ -158,7 +138,6 @@ ul {
 }
 
 .text {
-    width: 500px;
     height: 400px;
     background: rgba(49,54,58,0.58);
     margin: 20px;
@@ -193,3 +172,24 @@ ul {
                 0 -10px 20px #ff8000,
                 0 -18px 40px #F00;
 }
+
+
+.footer {
+    grid-auto-rows: minmax(200px, auto);
+    background: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(253,29,29,1) 41%, rgba(242,232,8,1) 100%);
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.footerLogo {
+    height: 80%;
+}
+
+.footerText {
+    font-size: 18px;
+    width: 340px;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
