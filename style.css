@@ -2,6 +2,7 @@
 
 .main {
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: 15% 65% 20%;
 }
 
@@ -16,7 +17,7 @@
     background: linear-gradient(66deg, rgba(0,0,0,1) 0%,
     rgba(253,29,29,1) 39%, rgba(242,232,8,1) 100%);
     grid-auto-rows: minmax(120px, auto);
-    grid-template-columns: 13% 55% 32%;
+    grid-template-columns: 13% 45% 42%;
     align-items: center;
 }
 
@@ -24,10 +25,25 @@
     width: 80%;
 }
 
+.logo1:hover {
+    perspective: 400px;
+    transform: rotate3d(0, 0, 1, 180deg);
+}
+
 .headerButton {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+@media(max-width: 870px) {
+    .photoName input[type="text"] {
+        width: 155px;
+    }
+    .headerButton {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 100%;
+    }
 }
 
 .MyInform {
@@ -115,7 +131,13 @@ a {
 }
 
 .sideBarRightPhoto {
-    width: 100%;
+    width: 70%;
+}
+
+.sideBarRightPhoto:hover {
+    transform: scale(1.5);
+    transition: all 1s ease 0s;
+    border-radius: 20%;
 }
 
 .textRight {
@@ -159,7 +181,7 @@ a {
 }
 
 .bigMac {
-    width: 220px;
+    width: 50%;
     float: right;
 }
 
