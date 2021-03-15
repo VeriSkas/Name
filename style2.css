@@ -80,11 +80,13 @@ input:valid {
     top: 0;
     left: 0;
     display: none;
+    position: fixed;
 }
 
 #modal:target {
     display: block;
     background-color: rgba(100, 100, 100, 0.9);
+    position: fixed;
 }
 
 #modalInput {
@@ -99,6 +101,7 @@ input:valid {
 #modalInput:target {
     display: block;
     background-color: rgba(209, 13, 13, 0.9);
+    position: fixed;
 }
 
 #modalInput p {
