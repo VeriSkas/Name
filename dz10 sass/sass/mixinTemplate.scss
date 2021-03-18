@@ -1,0 +1,23 @@
+%displayMain {
+    padding: 15px;
+    display: grid;
+    justify-items: center;
+}
+
+@mixin size ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin position ($pos, $top, $left) {
+    position: $pos;
+    top: $top;
+    left: $left;
+}
+
+@mixin border ($bord, $radius, $shadow) {
+    border: $bord;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
+

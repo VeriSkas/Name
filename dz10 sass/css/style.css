@@ -1,0 +1,309 @@
+.main .header, .main .center, .main .center .sideBarLeft, .main .center .sideBarRight, .main .footer {
+  padding: 15px;
+  display: grid;
+  justify-items: center;
+}
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+}
+#modal:target {
+  display: block;
+  background-color: rgba(100, 100, 100, 0.9);
+  position: fixed;
+}
+#modal .wrapper {
+  background-color: #5875a2b8;
+  width: 30%;
+  min-width: 350px;
+  border: 3px solid;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin: 150px auto;
+  padding: 20px;
+}
+#modal .wrapper .cartRegistr {
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+#modal .wrapper .cartRegistr form {
+  line-height: 30px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+#modal .wrapper .cartRegistr form h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  text-shadow: 3px 5px 2px #474747;
+}
+#modal .wrapper .cartRegistr form:invalid h1 {
+  color: red;
+}
+#modal .wrapper .cartRegistr form input:invalid {
+  background-color: #f88b8b;
+}
+#modal .wrapper .cartRegistr form input:valid {
+  background-color: #97fa84;
+}
+#modal .wrapper .cartRegistr form .name {
+  width: 290px;
+}
+#modal .wrapper .cartRegistr form .email {
+  width: 280px;
+}
+#modal .wrapper .cartRegistr form .password1 {
+  width: 270px;
+}
+#modal .wrapper .cartRegistr form .password2 {
+  width: 198px;
+}
+#modal .wrapper .cartRegistr form .brthData {
+  width: 218px;
+  text-align: center;
+  color: grey;
+  text-transform: uppercase;
+}
+#modal .wrapper .cartRegistr form .buttons {
+  margin-top: 10px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-weight: 700;
+}
+
+#modalInput {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#modalInput:target {
+  display: block;
+  background-color: rgba(209, 13, 13, 0.9);
+  position: fixed;
+}
+#modalInput p {
+  text-align: center;
+  font-size: 83px;
+  color: yellow;
+  font-weight: bold;
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.modalArea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  width: 97%;
+  height: 50px;
+  background-color: yellow;
+  box-shadow: 5px 5px 15px 5px #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #ff5e00;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 65% 20%;
+  min-width: 550px;
+}
+.main .header {
+  background: linear-gradient(66deg, black 0%, #fd1d1d 39%, #f2e808 100%);
+  grid-auto-rows: minmax(120px, auto);
+  grid-template-columns: 13% 45% 42%;
+  align-items: center;
+  perspective: 700px;
+}
+@media (max-width: 870px) {
+  .main .header {
+    grid-template-columns: 10% 30% 60%;
+  }
+}
+.main .header .logo1 {
+  width: 80%;
+  animation: spin 1s ease infinite;
+}
+.main .header .logo1:hover {
+  animation-play-state: paused;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.main .header .headerButton {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media (max-width: 870px) {
+  .main .header .headerButton {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 100%;
+  }
+}
+.main .header .myInform .myInform__div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #000000;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.main .header .myInform .myInform__div .btns {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+}
+.main .header .myInform .myInform__div .btns .mcdonalds, .main .header .myInform .myInform__div .btns .registration {
+  width: 100px;
+  height: 35px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main .header .myInform .myInform__div .btns .mcdonalds .photoMy, .main .header .myInform .myInform__div .btns .registration .photoMy {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.main .header .myInform .myInform__div .photoName input[type="password"] {
+  width: 155px;
+}
+@media (max-width: 621px) {
+  .main .header .myInform .myInform__div .photoName input[type="password"] {
+    width: 178px;
+  }
+}
+.main .center {
+  background-image: url(https://wallpapercave.com/wp/wp1919492.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(630px, auto);
+}
+@media (max-width: 870px) {
+  .main .center {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.main .center .sideBarLeft {
+  grid-template-rows: repeat(4, 100px);
+  align-items: center;
+}
+.main .center .sideBarLeft .leftButton {
+  width: 200px;
+  height: 50px;
+}
+.main .center .text {
+  height: 400px;
+  background: rgba(49, 54, 58, 0.58);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+.main .center .text::-webkit-scrollbar {
+  width: 12px;
+  background: yellow;
+  border-radius: 10px;
+}
+.main .center .text::-webkit-scrollbar-thumb {
+  background-color: #e91b1b;
+  border: 0px solid;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 10px black;
+}
+.main .center .text .bigMac {
+  width: 50%;
+  float: right;
+}
+.main .center .text .textdiv {
+  padding: 10px;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+.main .center .sideBarRight {
+  height: 300px;
+  margin-top: 30px;
+  background-color: yellow;
+  border: 2px solid;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px 5px #000000;
+  grid-template-rows: 70% 30%;
+  align-items: center;
+}
+@media (max-width: 870px) {
+  .main .center .sideBarRight {
+    grid-column: 1/3;
+  }
+}
+.main .center .sideBarRight .sideBarRightPhoto {
+  height: 70%;
+}
+.main .center .sideBarRight .sideBarRightPhoto:hover {
+  transform: scale(1.5);
+  transition: all 1s ease 0s;
+  border-radius: 20%;
+}
+.main .center .sideBarRight .textRight {
+  margin: 20px;
+  font-size: 40px;
+  color: #A7DD3C;
+  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77, 25, 0, 0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64, 77, 0, 0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
+  text-align: center;
+}
+.main .footer {
+  grid-auto-rows: minmax(200px, auto);
+  background: linear-gradient(321deg, black 0%, #fd1d1d 41%, #f2e808 100%);
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.main .footer .footerLogo {
+  width: 70%;
+}
+.main .footer .footerText {
+  font-size: 15px;
+}
+@media (max-width: 870px) {
+  .main .footer .footerText {
+    font-size: 14px;
+  }
+}
+.main .footer .footerText ul {
+  padding-inline-start: 10px;
+}

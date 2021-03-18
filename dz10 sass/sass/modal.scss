@@ -1,0 +1,94 @@
+#modal {
+    @include size (100vw, 100vh);
+    @include position (absolute, 0, 0);
+    display: none;
+    position: fixed;
+    &:target {
+        display: block;
+        background-color: rgba(100, 100, 100, 0.9);
+        position: fixed;
+    }
+    .wrapper {
+        background-color: #5875a2b8;
+        width: 30%;
+        min-width: 350px;
+        @include border (3px solid, 10%, 5px 5px 15px 5px #000000);
+        margin: 150px auto;
+        padding: 20px;
+        .cartRegistr {
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            form {
+                line-height: 30px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+                h1 {
+                    text-align: center;
+                    text-decoration: underline;
+                    font-size: 50px;
+                    text-shadow: 3px 5px 2px #474747;
+                }
+                &:invalid h1 {
+                    color: red;
+                }
+                input:invalid {
+                    background-color: rgb(248, 139, 139);
+                }
+                input:valid {
+                    background-color: rgb(151, 250, 132);
+                }
+                .name {
+                    width: 290px;
+                }
+                .email {
+                    width: 280px;
+                }
+                .password1 {
+                    width: 270px;
+                }
+                .password2 {
+                    width: 198px;
+                }
+                .brthData {
+                    width: 218px;
+                    text-align: center;
+                    color: grey;
+                    text-transform: uppercase;
+                }
+                .buttons {
+                    margin-top: 10px;
+                    justify-items: center;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+#modalInput {
+    @include size (100vw, 100vh);
+    @include position (absolute, 0, 0);
+    display: none;
+    &:target {
+        display: block;
+        background-color: rgba(209, 13, 13, 0.9);
+        position: fixed;
+    }
+    p {
+        text-align: center;
+        font-size: 83px;
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 3px 5px 2px #474747;
+    }
+}
+
+.modalArea {
+    @include size (100%, 100%);
+    @include position (absolute, 0, 0);
+}
