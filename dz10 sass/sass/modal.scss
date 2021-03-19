@@ -26,10 +26,7 @@
                 flex-direction: column;
                 margin-bottom: 0;
                 h1 {
-                    text-align: center;
-                    text-decoration: underline;
-                    font-size: 50px;
-                    text-shadow: 3px 5px 2px #474747;
+                    @include text (50px, $color: none, 3px 5px 2px #474747, $fweight: none, underline, center);
                 }
                 &:invalid h1 {
                     color: red;
@@ -54,8 +51,7 @@
                 }
                 .brthData {
                     width: 218px;
-                    text-align: center;
-                    color: grey;
+                    @include text ($fsize: none, grey, $tshadow: none, $fweight: none, $tdecor: none, center);
                     text-transform: uppercase;
                 }
                 .buttons {
@@ -80,11 +76,7 @@
         position: fixed;
     }
     p {
-        text-align: center;
-        font-size: 83px;
-        color: yellow;
-        font-weight: bold;
-        text-shadow: 3px 5px 2px #474747;
+        @include text (83px, yellow, 3px 5px 2px #474747, bold, $tdecor: none, center);
     }
 }
 

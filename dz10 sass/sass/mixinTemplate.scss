@@ -21,3 +21,13 @@
     box-shadow: $shadow;
 }
 
+@mixin text ($fsize, $color, $tshadow, $fweight, $tdecor, $talign) {
+    font-size: $fsize;
+    color: $color;
+    text-shadow: $tshadow;
+    font-weight: $fweight;
+    text-decoration: $tdecor;
+    text-align: $talign;
+}
+
+
