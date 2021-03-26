@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./styleCalc.css">
+    </head>
+    <body>
+        <h1>Калькулятор 10 000</h1>
+        <div class="calc">
+            <div class="screen">
+               <p id="result"></p>
+               <p id="resultSqrt"></p>
+               <p id="resultDivisor"></p>
+               <p>2*2*22=88</p>
+               <p>2*2+2=6</p>
+               <p>2*2*22=88</p>
+            </div>
+            <div class="item input">
+                <form name="form">
+                    <input type="text" name="textview" readonly>
+                </form>
+            </div>
+            <table class="mainTable" border="1">
+                <tr>
+                    <td class="item back" onclick="back()">&larr;</td>
+                    <td class="item clean" onclick="clean()">CE</td>
+                    <td class="item clean" onclick="clean()">C</td>
+                    <td class="item" onclick="minus()">&plusmn;</td>
+                    <td class="item" onclick="sqrt()">&radic;</td>
+                </tr>
+                <tr>
+                    <td class="item" onclick="insert('7')">7</td>
+                    <td class="item" onclick="insert('8')">8</td>
+                    <td class="item" onclick="insert('9')">9</td>
+                    <td class="item" onclick="insert('/')">/</td>
+                    <td class="item" onclick="percent()">%</td>
+                    </tr>
+                <tr>
+                    <td class="item" onclick="insert('4')">4</td>
+                    <td class="item" onclick="insert('5')">5</td>
+                    <td class="item" onclick="insert('6')">6</td>
+                    <td class="item" onclick="insert('*')">*</td>
+                    <td class="item" onclick="divisor()">1/x</td>
+                </tr>
+                <tr>
+                    <td class="item" onclick="insert('1')">1</td>
+                    <td class="item" onclick="insert('2')">2</td>
+                    <td class="item" onclick="insert('3')">3</td>
+                    <td class="item" onclick="insert('-')">-</td>
+                    <td class="item equal" onclick="equal()" rowspan="2">=</td>
+                </tr>
+                <tr>
+                    <td class="item" onclick="insert('0')" colspan="2">0</td>
+                    <td class="item" onclick="insert('.')">.</td>
+                    <td class="item" onclick="insert('+')">+</td>
+                    </tr>
+            </table>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
