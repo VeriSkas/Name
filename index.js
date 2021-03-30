@@ -1,6 +1,7 @@
 const result = document.getElementById('result');
 const resultSqrt = document.getElementById('resultSqrt');
 const resultDivisor = document.getElementById('resultDivisor');
+const resultPercent = document.getElementById('resultPercent');
 
 
 function insert(num) {
@@ -31,16 +32,24 @@ function back() { // .substring(start [, end]) Возвращает часть �
     document.form.textview.value = inpBack.substring(0, inpBack.length-1);
     result.innerHTML = document.form.textview.value;
 }
-function percent() { // как-то так получилось сосчитать проценты, но возникает проблема, если процент не двухзначное число или число с запятой :(
+function percent() {
     let inpPercent = document.form.textview.value;
     let stringBeforePercent = Number(inpPercent.substring(0, inpPercent.length - 3));
     let stringPercent = Number(inpPercent.substring(inpPercent.length - 3));
+    let i = 2;
+
+    while (isNaN(stringPercent) || isNaN(stringBeforePercent)) {
+        stringBeforePercent = Number(inpPercent.substring(0, inpPercent.length - i));
+        stringPercent = Number(inpPercent.substring(inpPercent.length - i));
+        i++;
+    }
 
     if (stringBeforePercent == 0) {
         document.form.textview.value = eval(stringPercent / 100);
     } else {
         document.form.textview.value = eval(((100 + stringPercent) * stringBeforePercent) / 100);
     }
+    resultPercent.innerHTML = `${inpPercent}% = ${document.form.textview.value}`;
 }
 function equal() {
     let inpValue = document.form.textview.value;
