@@ -9,8 +9,8 @@ for (i = 0; i < 10; i++) {
 console.log(arr1, arr2);
 
 function transformArray (oneArray, twoArray) {
-    let maxNumber = oneArray[1];
-    let minNumber = oneArray[1];
+    let maxNumber = oneArray[0];
+    let minNumber = oneArray[0];
 
     oneArray = oneArray.concat(twoArray);
     console.log(oneArray);
@@ -23,7 +23,7 @@ function transformArray (oneArray, twoArray) {
 
     console.log(oneArray);
 
-    for (i = 0; i < 11; i++) {
+    for (i = 0; i < oneArray.length; i++) {
         if (oneArray[i] > maxNumber) {
             maxNumber = oneArray[i];
         }
@@ -31,7 +31,8 @@ function transformArray (oneArray, twoArray) {
             minNumber = oneArray[i];
         }
     }
-
+    
+    oneArray = oneArray.sort((a, b) => b - a);
     console.log(oneArray, maxNumber, minNumber)
 }
 
