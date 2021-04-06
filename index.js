@@ -87,6 +87,8 @@
 
 let input = document.getElementById('input');
 let list = document.getElementById('list');
+let liItems = document.getElementsByTagName('li');
+
 
 function inputList() {
     let newListItem = document.createElement('li');
@@ -99,7 +101,19 @@ function deleteList() {
     (itemLi === null) ? alert('Список удален') : itemLi.remove();
 }
 
-//Выводит пустой объект почему-то :(
-localStorage.setItem('list', JSON.stringify(list));
-JSON.parse(localStorage.getItem('list'));
-console.log(JSON.parse(localStorage.getItem('list')));
+function saveList() {
+    let li = [];
+    for(i = 0; i < liItems.length; i++) {
+        li[i] = liItems[i].innerText;
+    }
+
+    localStorage.setItem('li', JSON.stringify(li));
+}
+
+function openSaveList() {
+    for(i = 0; i < JSON.parse(localStorage.getItem('li')).length; i++) {
+        let saveListItem = document.createElement('li');
+        saveListItem.textContent = JSON.parse(localStorage.getItem('li'))[i];
+        list.appendChild(saveListItem);
+    }
+}
