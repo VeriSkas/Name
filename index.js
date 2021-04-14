@@ -1,119 +1,182 @@
-// _______________1_________________
+// ЗАДАНИЕ 1
 
-// let arr = [1, 2, 3, 4, 5,];
-// arr.splice(1, 2);
-// console.log(arr);
+let input = document.getElementById('inputValue');
+let changedNum = document.getElementById('changedNumber');
 
-// _______________2_________________
+function colonOdd(num) {
+    num = num + input.value;
+    let numArr = num.split('');
+    for(let i = 0; i < numArr.length; i++) {
+        if((numArr[i] % 2 == 1) && (numArr[i + 1] % 2 == 1)) {
+            numArr.splice((i + 1), 0, ':')
+        }
+    }
+    numArr = numArr.join('');
+    changedNum.innerHTML = numArr;
+}
 
-// let str = 'My favorite "Hello world"';
-// let arr = str.split('').reverse();
-// let reverseStr = arr.join('');
-// console.log(reverseStr);
+// ЗАДАНИЕ 2 и 3
 
-// ______________3__________________
+// let arr = [1, 2, 3, 4, 5, 6, 'hello', 'world'];
 
-// let str = 'My favorite "Hello world"';
-// let arr = str.split('');
-// let reverseArr = [];
-
-// for (i = arr.length - 1; i >= 0; i--) {
-//     reverseArr.push(arr[i]);
+// function getFirst(array, n) {
+//     let arrFirst = array.splice(0, n);
+//     console.log(arrFirst);
 // }
 
-// let reverseStr = reverseArr.join('');
-// console.log(reverseStr);
+// getFirst(arr, 4);
 
-// ______________4____________________
+// function getLast(array, n) {
+//     let arrLast = array.splice(-n);
+//     console.log(arrLast);
+// }
 
-// let arr = ['Hello', 4, 99, 0, false, 'world', null];
-// let arr1 = ['Hello', 4, 99, 0, false, 'world', null];
-// let arr2 = ['Hello', 4, 100, 0, true, 'world', null, ''];
+// getLast(arr, 4);
 
-// function compareArr (a, b) {
-//     if (a.length === b.length) {
-//         for (i = 0; i < a.length; i++){
-//             if  (a[i] !== b[i]) {
-//                 console.log('false');
-//                 return false;
+// ЗАДАНИЕ 4
+
+// let arr1 = [1, 8, 0, false, 'string', 1, 8, 3, false, 'string', 96, 1, 8, false, 7, 'string', 96, null, 55, '', null, 55, '', 96, null, 55, ''];
+// let arr2 = [14, 55, 'hello', 55, null, 'string', 55, 8, true, 55, 659, 55, null, 'string', 96, 55, 659, true, 55];
+
+// function doUniqueElem(arrey) {
+//     let sortArr = arrey.sort();
+//     for(let i = 0; i < sortArr.length; i++) {
+//         if (sortArr[i] == sortArr[i + 1]) {
+//             let repeatElem = sortArr[i];
+//             while (sortArr.indexOf(repeatElem) != -1) {
+//                 sortArr.splice((sortArr.indexOf(repeatElem)), 1)
+//                 i--;
 //             }
 //         }
-//         console.log('true');
-//         return true;
-//     } else {
-//         console.log('false');
-//         return false;
 //     }
+//     return arrey;
 // }
 
-// compareArr(arr, arr1);
-// compareArr(arr, arr2);
+// function concatArrey(arrey1, arrey2) {
+//     let arreyOne = doUniqueElem(arrey1);
+//     let arreyTwo = doUniqueElem(arrey2);
+//     let concatArrey = arreyOne.concat(arreyTwo);
+//     console.log(concatArrey);
+// }
 
-// _________________5___________________
+// concatArrey(arr1, arr2);
 
-// for (i = 1; i <= 100; i++) {
-//     if ((i % 3 === 0) && (i % 5 === 0)) {
-//         console.log('FizzBuzz');
-//     } else if (i % 3 === 0) {
-//         console.log('Fizz');
-//     } else if (i % 5 === 0) {
-//         console.log('Buzz');
-//     } else {
-//         console.log(i);
+
+// ЗАДАНИЕ 5
+
+// let arrey = [5, 69, '63fghbrft', '55grger', 20];
+// let elemSqr = 0;
+
+// function sumOfSquares(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         elemSqr = elemSqr + Math.pow(parseFloat(arr[i]), 2);
 //     }
+//     console.log(elemSqr);
 // }
 
-// _________________6____________________
+// sumOfSquares(arrey);
 
-// let arr = [];
-// let arr1 = [];
-// let lengthArr = 8;
 
-// for (i = 0; i < lengthArr; i++) {
-//     if (i % 2 === 0) {
-//         arr[i] = '#';
-//         arr1[i] = ' ';
-//     } else {
-//         arr[i] = ' ';
-//         arr1[i] = '#';
+// ЗАДАЧКА В КЛАССЕ (преобразовать в массив с массивами)
+
+// let user = [
+//     {
+//     name: 'Vasya',
+//     age: 21
+//     },
+//     {
+//     name: 'Vanya',
+//     age: 18
+//     },
+//     {
+//     name: 'Petya',
+//     age: 16
+//     },
+//     {
+//     name: 'Katya',
+//     age: 29,
+//     },
+// ]
+// let usersMainArr = [];
+
+// function arrUsers (arr) {
+
+//     for(let i = 0; i < arr.length; i++) {
+//         let arrUser = [];
+//         for(let key in arr[i]) {
+//             arrUser.push(arr[i][key]);
+//         }
+//         usersMainArr[i] = arrUser;
 //     }
+//     console.log(usersMainArr);
 // }
 
-// for (i = 0; i < lengthArr; i++) {
-//     (i % 2 === 0) ? console.log(arr.join('')): console.log(arr1.join(''));
+// arrUsers (user);
+
+// ЗАДАНИЕ 6
+
+// let user = [
+//     {
+//     name: 'Vasya',
+//     age: 21
+//     },
+//     {
+//     name: 'Vanya',
+//     age: 18
+//     },
+//     {
+//     name: 'Petya',
+//     age: 16
+//     },
+//     {
+//     name: 'Katya',
+//     age: 29,
+//     },
+// ]
+
+// function sortArr(arr) {
+//     for(let j = 0; j  < arr.length - 1; j++) {
+//         for(let i = 0; i < arr.length - 1; i++) {
+//             if(arr[i].age > arr[i + 1].age) {
+//                 let tempValue = arr[i];
+//                 arr[i] = arr[i + 1];
+//                 arr[i + 1] = tempValue;
+//             }
+//         }
+//     }
+//     console.log(arr);
 // }
 
-// _________________7_________________
-
-let input = document.getElementById('input');
-let list = document.getElementById('list');
-let liItems = document.getElementsByTagName('li');
+// sortArr(user);
 
 
-function inputList() {
-    let newListItem = document.createElement('li');
-    newListItem.textContent = input.value;
-    list.appendChild(newListItem);
-}
+// ЗАДАНИЕ 7
 
-function deleteList() {
-    let itemLi = document.querySelector('ul#list > li:last-child');
-    (itemLi === null) ? alert('Список удален') : itemLi.remove();
-}
+// let user = [
+//     {
+//     name: 'Vasya',
+//     age: 21
+//     },
+//     {
+//     name: 'Vanya',
+//     age: 18
+//     },
+//     {
+//     name: 'Petya',
+//     age: 16
+//     },
+//     {
+//     name: 'Katya',
+//     age: 29,
+//     },
+// ]
 
-function saveList() {
-    let li = [];
-    for(i = 0; i < liItems.length; i++) {
-        li[i] = liItems[i].innerText;
-    }
+// function propertyValue(array, key) {
+//     let keyValue = [];
+//     for(let i = 0; i < array.length; i++) {
+//         keyValue.push(array[i][key]);
+//     }
+//     console.log(keyValue);
+// }
 
-    localStorage.setItem('li', JSON.stringify(li));
-}
-
-function openSaveList() {
-    for(i = 0; i < JSON.parse(localStorage.getItem('li')).length; i++) {
-        let saveListItem = document.createElement('li');
-        saveListItem.textContent = JSON.parse(localStorage.getItem('li'))[i];
-        list.appendChild(saveListItem);
-    }
-}
+// propertyValue(user, "name");
