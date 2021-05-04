@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formRegistr">
+        <form action="#">
+            <h1>Регистрация</h1>
+            <div>
+                <label for="name">Имя:</label>
+                <input class="name" type="text" placeholder="Введите ваше имя" required>
+            </div>
+            <div>
+                <label for="surname">Фамилия:</label>
+                <input class="surname" type="text" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input class="password" type="password" placeholder="Введите пароль" required>
+            </div>
+            <div>
+                <label for="password2">Повторите:</label>
+                <input class="password2" type="password" placeholder="Введите пароль" required>
+            </div>
+            <div>
+                <label for="consent">Согласны на обработку персональных данных: </label>
+                <input class="consent" type="checkbox" required>
+            </div>
+            <div class="buttons">
+                <button type="reset">Очистить</button>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
