@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+                <h1>Info about user</h1>
+                <form class="formInput">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Last name:</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="age" class="form-label">Age:</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    <div>
+                        <label for="man">Man</label>
+                        <input type="radio" name="gender" id="man" checked>
+                        <label for="woman">Woman</label>
+                        <input type="radio" name="gender" id="woman">
+                    </div>
+                    <div>
+                        <button type="submit">Submit form</button>
+                    </div>
+                    <div>
+                        <button class="users">Get User Data</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="usersData"></ul>
+        </div>
+    </body>
+</html>

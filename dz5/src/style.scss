@@ -1,0 +1,46 @@
+body {
+    background-color: plum;
+};
+
+.wrapper {
+    .form {
+        width: 30%;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #ffaae191;
+        border-radius: 10px;
+
+        .formInput {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 200px;
+
+            button {
+                background-color: #60f1f1e3;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .usersData {
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+
+        .userItem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 9px double #f0a6df;
+            padding: 20px;
+            margin: 20px;
+            background-color: #60f1f1e3;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+};
