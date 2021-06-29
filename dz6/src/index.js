@@ -4,7 +4,6 @@ import { getToken, getUserEmail } from './shared/ls-service';
 import { logoutBtnHandler, sayHelloUser } from './components/profile/profile';
 import { signUpHandler } from './components/sign-up/sign-up';
 
-
 window.onload = () => {
     const pathName = Object.values(paths).find( path => (path === window.location.pathname));
 
@@ -21,11 +20,9 @@ window.onload = () => {
             };
 
             break;
-
         case paths.sign_in:
             signInHandler();
             break;
-
         case paths.sign_up:
             signUpHandler();
             break;
